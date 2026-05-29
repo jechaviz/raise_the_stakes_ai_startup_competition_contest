@@ -29,6 +29,11 @@ Event: 2026-07-08 and 2026-07-09 at Le Carrousel du Louvre, Paris.
 - `docs/LANDING_DECK_VIDEO_OUTLINE.md`: landing, deck, and demo video outline.
 - `docs/TRACTION_PROOF_MINIMUM.md`: minimum validation pack.
 - `docs/APPLICATION_PACKET.md`: Dealum-ready answers and field prep.
+- `docs/COMPETITIVE_BATTLECARD.md`: competitive landscape, moat, wedge, and
+  objection handling.
+- `docs/JUDGING_SCORECARD.md`: RAISE judging narrative and score targets.
+- `docs/STRATEGIC_BRIEF.generated.md`: generated strategic brief from the
+  shared V core.
 - `docs/RISKS.md`: risk register and mitigations.
 - `docs/AUTOMATION_PLAN.md`: WAIBAv-driven external form workflow.
 - `submission/dealum_payload.json`: structured application payload.
