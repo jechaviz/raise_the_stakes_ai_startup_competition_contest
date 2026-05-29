@@ -28,13 +28,24 @@
     "ai_core": "AI performs requirement extraction, fit scoring, answer drafting, critique, evidence-gap detection, and automation planning.",
     "business_model": "Paid application sprints, monthly founder operations workspaces, accelerator/team seats, and success-based premium services where allowed.",
     "traction": "Reusable opportunity packages and MVP demo are active; founder conversations, LOIs, and pilot receipts are the next evidence gate.",
+    "competitive_positioning": "ContestOps AI is not a startup portal, grant database, generic proposal writer, or general browser agent. It is the application-ops layer that turns opportunities into execution plans, product proof, structured payloads, and submission receipts.",
+    "moat": "The system compounds through opportunity templates, field maps, judging scorecards, evidence ledgers, automation receipts, and reusable V/WAIBAv infrastructure.",
     "raise_ask": "RAISE exposure, investor intros, customer discovery, strategic credits, and access to AI operators who can validate the product."
+  },
+  "validation_targets": {
+    "founder_conversations": 5,
+    "written_validations": 2,
+    "paid_or_loi_signals": 1,
+    "generated_opportunity_packages": 3,
+    "automation_receipts": 1
   },
   "evidence": {
     "manifest": "evidence/public/manifest.json",
     "application_packet": "docs/APPLICATION_PACKET.md",
     "source_snapshot": "evidence/source_snapshot.md",
     "traction_plan": "docs/TRACTION_PROOF_MINIMUM.md",
-    "automation_plan": "docs/AUTOMATION_PLAN.md"
+    "automation_plan": "docs/AUTOMATION_PLAN.md",
+    "competitive_battlecard": "docs/COMPETITIVE_BATTLECARD.md",
+    "judging_scorecard": "docs/JUDGING_SCORECARD.md"
   }
 }

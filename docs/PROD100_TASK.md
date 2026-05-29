@@ -28,6 +28,8 @@ Product: `ContestOps AI`
 - [x] Minimum traction proof plan exists.
 - [x] Application packet and structured payload exist.
 - [x] Risk register exists.
+- [x] Competitive battlecard exists.
+- [x] RAISE judging scorecard exists.
 - [x] WAIBAv automation plan and playbooks exist.
 - [x] Generated V manifest exists.
 - [ ] Authenticated Dealum session submits final packet and captures receipt.

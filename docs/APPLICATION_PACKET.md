@@ -12,6 +12,12 @@ ContestOps AI is an AI-native operations workspace that helps founders turn
 high-value opportunities into shipped demos, evidence packs, pitch assets, and
 completed submissions.
 
+Sharper version for short Dealum fields:
+
+ContestOps AI is the application-ops agent for founders: it turns competitions,
+grants, accelerators, and RFPs into execution plans, product evidence, pitch
+assets, and submitted forms.
+
 ## Long Description
 
 Startup competitions, grants, accelerators, and RFPs create real growth
@@ -44,12 +50,20 @@ ContestOps AI gives founders a repeatable application-ops system:
 - collect proof;
 - automate external form prep and submission receipts.
 
+The wedge is not generic proposal writing. The wedge is deadline-driven founder
+opportunities where the application requires product work, proof, media, and
+external form execution.
+
 ## AI Core
 
 AI is central to the product. It performs requirement extraction, fit scoring,
 answer drafting, evidence-gap detection, pitch critique, and agentic execution
 planning. Browser automation then turns the AI-generated package into external
 form actions with receipts.
+
+AI decisions are inspectable through generated manifests, checklists, evidence
+ledgers, and WAIBAv traces. The product is designed to keep humans in control of
+final claims while eliminating the manual coordination layer.
 
 ## Product Status
 
@@ -80,6 +94,10 @@ Expansion surfaces:
 - public/private procurement;
 - accelerator and investor update workflows.
 
+Competitive categories include startup portals, grant/RFP systems, proposal
+writers, generic agents, and consultants. ContestOps AI complements portals and
+competes by owning the full pre-submit operating workflow.
+
 ## Business Model
 
 - Paid application sprint packages.
@@ -97,6 +115,24 @@ Initial proof package:
 - automation playbooks and field maps;
 - pending founder conversations, LOIs, and pilot receipts listed in
   `docs/TRACTION_PROOF_MINIMUM.md`.
+
+Validation target before final submit:
+
+- five founder/operator conversations;
+- two written validations or LOIs;
+- one paid sprint or pilot-intent receipt;
+- three generated opportunity packages;
+- one repeatable WAIBAv automation trace.
+
+## Competitive Position
+
+ContestOps AI is different because it packages the full application lifecycle:
+opportunity interpretation, go/no-go scoring, MVP backlog, evidence boundaries,
+deck/video outline, structured payload, browser automation, and receipts.
+
+Where RFP tools focus on enterprise proposals and grant tools focus on funding
+databases, ContestOps AI starts with founders who need to turn messy
+opportunities into shipped proof under deadline pressure.
 
 ## Team
 
@@ -126,6 +162,9 @@ ContestOps AI is applying to RAISE for investor exposure, customer discovery,
 strategic credits, credibility with early founder customers, and access to AI
 operators who can validate the product as infrastructure for startup execution.
 
+RAISE is also the perfect live proof: the application package itself was
+generated, scored, mapped, and QA-tested by the product workflow.
+
 ## Links
 
 - Official opportunity: https://www.raisesummit.com/startup-competition
@@ -133,3 +172,5 @@ operators who can validate the product as infrastructure for startup execution.
 - Product core: `C:\git\v_projects\contestops_ai`
 - Application package: this repository
 - Demo panel: `C:\git\websites\raise_the_stakes_ai_startup_competition`
+- Competitive battlecard: `docs/COMPETITIVE_BATTLECARD.md`
+- Judging scorecard: `docs/JUDGING_SCORECARD.md`

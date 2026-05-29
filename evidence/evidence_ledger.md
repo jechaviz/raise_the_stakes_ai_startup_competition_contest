@@ -23,6 +23,8 @@ storage references and must not be committed.
 | Generated application packet | active | `docs/APPLICATION_PACKET.generated.md` |
 | Dealum payload | active | `submission/dealum_payload.json` |
 | Dealum field map | active | `submission/dealum_form_map.yml` |
+| Competitive battlecard | active | `docs/COMPETITIVE_BATTLECARD.md` |
+| Judging scorecard | active | `docs/JUDGING_SCORECARD.md` |
 | WAIBAv draft trace | planned | `automation/output/dealum_draft_prepare_trace.jsonl` |
 | WAIBAv final receipt | planned | `automation/output/submission_receipt.json` |
 

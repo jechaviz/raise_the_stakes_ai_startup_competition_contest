@@ -24,6 +24,26 @@ before broad public launch.
   - monthly workspace,
   - or accelerator/team package.
 
+## 72-Hour Proof Sprint
+
+| Window | Output | Acceptance |
+|---|---|---|
+| 0-12h | Founder interview list | 20 targets across founders, grant writers, operators, accelerators. |
+| 12-24h | Five calls or async reviews | Notes captured with permission state. |
+| 24-36h | Two written validations | Quote, LOI, pilot intent, or paid sprint interest. |
+| 36-48h | One live opportunity run | Generate packet for a user-selected opportunity. |
+| 48-60h | Before/after time proof | Estimate hours saved and manual steps removed. |
+| 60-72h | Judge-ready traction page | Redacted summary, metrics, and quotes. |
+
+## Metrics To Show
+
+- Time from opportunity URL to first application packet.
+- Number of generated artifacts.
+- Number of missing-evidence items detected.
+- Number of external form fields mapped.
+- Founder-reported hours saved.
+- Willingness-to-pay or pilot conversion signal.
+
 ## Current Proof Inventory
 
 | Proof | Status | Path |
@@ -55,3 +75,10 @@ ask for 10 minutes of feedback?
 - What manual work did this reduce?
 - Would you use or pay for this in a real deadline sprint?
 - May we quote your feedback in a startup competition application?
+
+## Strongest Quote Pattern
+
+Use quotes that show urgency and workflow value:
+
+"ContestOps AI turned a deadline we would have skipped into a concrete
+submission plan with evidence, pitch assets, and form prep in one session."

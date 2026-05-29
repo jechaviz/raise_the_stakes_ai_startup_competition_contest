@@ -59,6 +59,12 @@ fields:
   business_model:
     selector_hint: "Business model"
     payload_key: answers.business_model
+  competitive_positioning:
+    selector_hint: "Competition"
+    payload_key: answers.competitive_positioning
+  moat:
+    selector_hint: "Moat"
+    payload_key: answers.moat
 
 actions:
   - open_partner_listing
