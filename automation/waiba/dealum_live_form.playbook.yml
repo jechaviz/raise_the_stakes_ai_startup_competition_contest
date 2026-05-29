@@ -1,0 +1,46 @@
+metadata:
+  name: raise-dealum-live-form
+
+variables:
+  PROJECT_DIR: "${ROOT_PLAYBOOK_DIR}\\..\\.."
+  OUTPUT_DIR: "${PROJECT_DIR}\\automation\\output"
+  TRACE_PATH: "${OUTPUT_DIR}\\dealum_live_form_trace.jsonl"
+  DEALUM_URL: "https://app.dealum.com/"
+  VC4A_URL: "https://vc4a.com/raise/raise-summit-2026-startup-competition/"
+  PAYLOAD_PATH: "${PROJECT_DIR}\\submission\\dealum_payload.json"
+  FORM_MAP_PATH: "${PROJECT_DIR}\\submission\\dealum_form_map.yml"
+  FINAL_PACKAGE_READY: "${RAISE_FINAL_PACKAGE_READY}"
+
+steps:
+  prod:
+    - action: FS.EnsureDir
+      params:
+        path: "${OUTPUT_DIR}"
+
+    - action: Trace.Event
+      params:
+        path: "${TRACE_PATH}"
+        name: "live_form_start"
+        message: "Opening Dealum form automation session for RAISE."
+        data:
+          dealum_url: "${DEALUM_URL}"
+          vc4a_url: "${VC4A_URL}"
+          payload: "${PAYLOAD_PATH}"
+          form_map: "${FORM_MAP_PATH}"
+          final_package_ready: "${FINAL_PACKAGE_READY}"
+
+    - action: Browser.Open
+      params:
+        url: "${VC4A_URL}"
+        headless: false
+
+    - action: Trace.Event
+      params:
+        path: "${TRACE_PATH}"
+        name: "operator_review"
+        message: "Visible Dealum/VC4A session opened for authenticated draft fill and final submission."
+
+  debug:
+    - action: Note
+      params:
+        text: "RAISE Dealum live-form playbook is alive."

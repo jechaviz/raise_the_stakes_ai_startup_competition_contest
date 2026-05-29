@@ -1,0 +1,135 @@
+# Application Packet
+
+Target: RAISE the STAKES AI Startup Competition 2026.
+
+Portal: Dealum.
+
+Product: ContestOps AI.
+
+## Short Description
+
+ContestOps AI is an AI-native operations workspace that helps founders turn
+high-value opportunities into shipped demos, evidence packs, pitch assets, and
+completed submissions.
+
+## Long Description
+
+Startup competitions, grants, accelerators, and RFPs create real growth
+opportunities, but the application process is fragmented: teams must interpret
+rules, build or adapt a product, collect evidence, write a pitch, fill external
+forms, and prove traction under deadline pressure. ContestOps AI packages that
+work into an executable AI workflow.
+
+The product ingests an opportunity brief or URL, extracts requirements,
+generates eligibility checklists, creates evidence ledgers, drafts application
+answers, prepares deck/video outlines, and runs external form automation through
+WAIBAv. The current RAISE package demonstrates the full loop: source snapshot,
+RAISE-specific eligibility, Dealum payload, product narrative, traction minimum,
+automation playbooks, and production readiness manifest generated from a V core.
+
+## Problem
+
+Founders miss high-value opportunities because application operations are slow,
+manual, and evidence-heavy. The work often sits across documents, browser tabs,
+spreadsheets, email, and last-minute memory.
+
+## Solution
+
+ContestOps AI gives founders a repeatable application-ops system:
+
+- read the opportunity;
+- score fit and urgency;
+- create the product/application checklist;
+- generate pitch and submission assets;
+- collect proof;
+- automate external form prep and submission receipts.
+
+## AI Core
+
+AI is central to the product. It performs requirement extraction, fit scoring,
+answer drafting, evidence-gap detection, pitch critique, and agentic execution
+planning. Browser automation then turns the AI-generated package into external
+form actions with receipts.
+
+## Product Status
+
+Stage: MVP.
+
+Current running components:
+
+- V package generator in `C:\git\v_projects\contestops_ai`.
+- RAISE opportunity package in this subrepo.
+- Vue3 CDN + SFC + UnoCSS demo panel under `C:\git\websites`.
+- WAIBAv form-prep playbooks.
+
+## Market
+
+Primary users:
+
+- early-stage founders;
+- startup studios;
+- grant/application teams;
+- accelerators;
+- technical service firms.
+
+Expansion surfaces:
+
+- hackathons;
+- startup competitions;
+- grants;
+- public/private procurement;
+- accelerator and investor update workflows.
+
+## Business Model
+
+- Paid application sprint packages.
+- Monthly founder operations workspace.
+- Accelerator/team seats.
+- Success-based premium services where rules and jurisdictions allow.
+
+## Traction
+
+Initial proof package:
+
+- multiple local opportunity packages;
+- reusable V generator;
+- RAISE application workspace;
+- automation playbooks and field maps;
+- pending founder conversations, LOIs, and pilot receipts listed in
+  `docs/TRACTION_PROOF_MINIMUM.md`.
+
+## Team
+
+Minimum eligibility requires two team members or two dedicated cofounders.
+
+Secure Dealum fields to complete:
+
+- founder 1 name, role, email, LinkedIn;
+- founder 2 name, role, email, LinkedIn;
+- commitment level;
+- attendance availability for Paris finals.
+
+## Funding
+
+Secure Dealum fields to complete:
+
+- funding stage;
+- total funding raised;
+- investor summary;
+- cap table notes if requested.
+
+Eligibility target: below EUR 10M total funding.
+
+## RAISE Ask
+
+ContestOps AI is applying to RAISE for investor exposure, customer discovery,
+strategic credits, credibility with early founder customers, and access to AI
+operators who can validate the product as infrastructure for startup execution.
+
+## Links
+
+- Official opportunity: https://www.raisesummit.com/startup-competition
+- Partner listing: https://vc4a.com/raise/raise-summit-2026-startup-competition/
+- Product core: `C:\git\v_projects\contestops_ai`
+- Application package: this repository
+- Demo panel: `C:\git\websites\raise_the_stakes_ai_startup_competition`

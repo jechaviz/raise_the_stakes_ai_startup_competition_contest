@@ -1,0 +1,64 @@
+metadata:
+  name: raise-dealum-draft-prepare
+
+variables:
+  PROJECT_DIR: "${ROOT_PLAYBOOK_DIR}\\..\\.."
+  OUTPUT_DIR: "${PROJECT_DIR}\\automation\\output"
+  TRACE_PATH: "${OUTPUT_DIR}\\dealum_draft_prepare_trace.jsonl"
+  PAYLOAD_PATH: "${PROJECT_DIR}\\submission\\dealum_payload.json"
+  FORM_MAP_PATH: "${PROJECT_DIR}\\submission\\dealum_form_map.yml"
+  MANIFEST_PATH: "${PROJECT_DIR}\\evidence\\public\\manifest.json"
+  ANSWERS_PATH: "${PROJECT_DIR}\\submission\\application_answers.md"
+
+steps:
+  prod:
+    - action: FS.EnsureDir
+      params:
+        path: "${OUTPUT_DIR}"
+
+    - action: Trace.Event
+      params:
+        path: "${TRACE_PATH}"
+        name: "draft_prepare_start"
+        message: "Preparing RAISE Dealum draft assets."
+        data:
+          payload: "${PAYLOAD_PATH}"
+          form_map: "${FORM_MAP_PATH}"
+          manifest: "${MANIFEST_PATH}"
+          answers: "${ANSWERS_PATH}"
+
+    - action: FS.Exists
+      register: payload_exists
+      params:
+        path: "${PAYLOAD_PATH}"
+
+    - action: FS.Exists
+      register: form_map_exists
+      params:
+        path: "${FORM_MAP_PATH}"
+
+    - action: FS.Exists
+      register: manifest_exists
+      params:
+        path: "${MANIFEST_PATH}"
+
+    - action: FS.Exists
+      register: answers_exists
+      params:
+        path: "${ANSWERS_PATH}"
+
+    - action: Trace.Event
+      params:
+        path: "${TRACE_PATH}"
+        name: "draft_prepare_complete"
+        message: "RAISE Dealum draft assets checked."
+        data:
+          payload_exists: "${payload_exists}"
+          form_map_exists: "${form_map_exists}"
+          manifest_exists: "${manifest_exists}"
+          answers_exists: "${answers_exists}"
+
+  debug:
+    - action: Note
+      params:
+        text: "RAISE Dealum draft preparation playbook is alive."

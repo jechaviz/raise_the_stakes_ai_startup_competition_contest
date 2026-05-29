@@ -1,0 +1,71 @@
+form:
+  source: https://app.dealum.com/
+  partner_listing: https://vc4a.com/raise/raise-summit-2026-startup-competition/
+  target: RAISE the STAKES 2026 application
+  payload: submission/dealum_payload.json
+
+fields:
+  company_name:
+    selector_hint: "Company name"
+    payload_key: company.name
+  tagline:
+    selector_hint: "Tagline"
+    payload_key: company.tagline
+  sector:
+    selector_hint: "Sector"
+    payload_key: company.sector
+  stage:
+    selector_hint: "Stage"
+    payload_key: company.stage
+  website_url:
+    selector_hint: "Website"
+    payload_key: company.website_url
+  demo_url:
+    selector_hint: "Demo"
+    payload_key: company.demo_url
+  deck_url:
+    selector_hint: "Deck"
+    payload_key: company.deck_url
+  video_url:
+    selector_hint: "Video"
+    payload_key: company.video_url
+  legal_entity:
+    selector_hint: "Registered legal entity"
+    payload_key: company.registered_legal_entity
+  incorporation_country:
+    selector_hint: "Country"
+    payload_key: company.incorporation_country
+  total_funding:
+    selector_hint: "Funding raised"
+    payload_key: company.total_funding_raised
+  team:
+    selector_hint: "Team"
+    payload_key: team
+  short_description:
+    selector_hint: "Short description"
+    payload_key: answers.short_description
+  problem:
+    selector_hint: "Problem"
+    payload_key: answers.problem
+  solution:
+    selector_hint: "Solution"
+    payload_key: answers.solution
+  ai_core:
+    selector_hint: "AI"
+    payload_key: answers.ai_core
+  traction:
+    selector_hint: "Traction"
+    payload_key: answers.traction
+  business_model:
+    selector_hint: "Business model"
+    payload_key: answers.business_model
+
+actions:
+  - open_partner_listing
+  - open_dealum_apply
+  - ensure_logged_in
+  - create_or_update_company_profile
+  - fill_required_fields
+  - save_draft
+  - capture_receipt
+  - final_submit_when_ready

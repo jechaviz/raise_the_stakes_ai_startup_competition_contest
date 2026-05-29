@@ -1,0 +1,40 @@
+{
+  "program": "RAISE the STAKES AI Startup Competition 2026",
+  "track": "ai_startup_pitch",
+  "application_portal": "https://app.dealum.com/",
+  "company": {
+    "name": "ContestOps AI",
+    "tagline": "AI-native operations for founders turning high-value opportunities into shipped products, evidence packs, and completed submissions.",
+    "stage": "MVP / pre-seed",
+    "sector": "Artificial intelligence",
+    "website_url": "TBD",
+    "demo_url": "TBD",
+    "deck_url": "TBD",
+    "video_url": "TBD",
+    "registered_legal_entity": "secure_input_required",
+    "incorporation_country": "secure_input_required",
+    "total_funding_raised": "secure_input_required_below_eur_10000000"
+  },
+  "team": {
+    "minimum_required": "2 members or 2 dedicated cofounders",
+    "founder_1": "secure_input_required",
+    "founder_2": "secure_input_required",
+    "paris_attendance": "secure_input_required"
+  },
+  "answers": {
+    "short_description": "ContestOps AI is an AI-native operations workspace that helps founders turn high-value opportunities into shipped demos, evidence packs, pitch assets, and completed submissions.",
+    "problem": "Founders miss high-value opportunities because application operations are slow, manual, and evidence-heavy.",
+    "solution": "ContestOps AI reads opportunity rules, scores fit, generates application assets, builds evidence ledgers, and prepares or executes external form workflows through WAIBAv automation.",
+    "ai_core": "AI performs requirement extraction, fit scoring, answer drafting, critique, evidence-gap detection, and automation planning.",
+    "business_model": "Paid application sprints, monthly founder operations workspaces, accelerator/team seats, and success-based premium services where allowed.",
+    "traction": "Reusable opportunity packages and MVP demo are active; founder conversations, LOIs, and pilot receipts are the next evidence gate.",
+    "raise_ask": "RAISE exposure, investor intros, customer discovery, strategic credits, and access to AI operators who can validate the product."
+  },
+  "evidence": {
+    "manifest": "evidence/public/manifest.json",
+    "application_packet": "docs/APPLICATION_PACKET.md",
+    "source_snapshot": "evidence/source_snapshot.md",
+    "traction_plan": "docs/TRACTION_PROOF_MINIMUM.md",
+    "automation_plan": "docs/AUTOMATION_PLAN.md"
+  }
+}

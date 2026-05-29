@@ -2,42 +2,66 @@
 
 Tag: `worth_it`
 
-Link: https://www.raisesummit.com/startup-competition
+Track: `ai_startup_pitch`
 
-## Fechas
+Product candidate: `ContestOps AI`
 
-- Applications open: 2026-01-08.
-- Applications close: pagina muestra 2026-06-10 en milestones; otras fuentes
-  mencionan 2026-07-01. Revalidar antes de aplicar.
-- Event: 2026-07-08 y 2026-07-09 en Paris.
+Application portal: https://app.dealum.com/
 
-## Beneficio
+Official page: https://www.raisesummit.com/startup-competition
 
-- Pagina oficial menciona EUR 10M+ en premios/creditos/exposicion.
+Expected remote: https://github.com/jechaviz/raise_the_stakes_ai_startup_competition_contest
 
-## Requisitos
+## Production Target
 
-- Startup AI early-stage.
-- Maximo EUR 10M raised.
-- Equipo minimo de 2 o 2 cofounders dedicados.
-- Entidad legal registrada.
+Goal: application-ready package for RAISE the STAKES 2026.
 
-## Por que vale con el nuevo criterio
+Operational deadline: 2026-06-10. The official page also shows a lower-page
+copy conflict saying "Application closes 1st of July"; VC4A and the official
+milestone section show June 10, so June 10 is treated as the hard date.
 
-No depende de tener ya un repo perfecto. Si en dias se puede levantar producto,
-landing, demo, usuarios iniciales y pipeline de ventas, el requisito fuerte es
-pitch + claridad de mercado.
+Event: 2026-07-08 and 2026-07-09 at Le Carrousel du Louvre, Paris.
 
-## Producto recomendado
+## Deliverables
 
-`ContestOps AI`: agente que encuentra oportunidades, lee reglas, crea paquetes
-de aplicacion, produce MVPs y administra submissions.
+- `docs/ELIGIBILITY_CHECKLIST.md`: source-backed eligibility and secure inputs.
+- `docs/PRODUCT_AI_PROPOSED.md`: AI startup product proposal.
+- `docs/LANDING_DECK_VIDEO_OUTLINE.md`: landing, deck, and demo video outline.
+- `docs/TRACTION_PROOF_MINIMUM.md`: minimum validation pack.
+- `docs/APPLICATION_PACKET.md`: Dealum-ready answers and field prep.
+- `docs/RISKS.md`: risk register and mitigations.
+- `docs/AUTOMATION_PLAN.md`: WAIBAv-driven external form workflow.
+- `submission/dealum_payload.json`: structured application payload.
+- `submission/dealum_form_map.yml`: external form field map.
+- `evidence/evidence_ledger.md`: public/private evidence index.
+- `evidence/public/manifest.json`: generated V manifest for the RAISE profile.
 
-## Sprint de 5 dias
+## Reusable Core
 
-1. Dia 1: landing + demo flow.
-2. Dia 2: ingestion de convocatorias reales.
-3. Dia 3: ranking ROI + dossier automatico.
-4. Dia 4: 5 usuarios/testimonios o cartas de interes.
-5. Dia 5: deck, video y application.
+Shared V package generator:
 
+`C:\git\v_projects\contestops_ai`
+
+Commands:
+
+```powershell
+v run C:\git\v_projects\contestops_ai -- manifest --profile raise evidence\public\manifest.json
+v run C:\git\v_projects\contestops_ai -- checklist --profile raise docs\RULES_CHECKLIST.generated.md
+v run C:\git\v_projects\contestops_ai -- evidence --profile raise docs\EVIDENCE.generated.md
+v run C:\git\v_projects\contestops_ai -- application-packet --profile raise docs\APPLICATION_PACKET.generated.md
+```
+
+Web demo workspace:
+
+`C:\git\websites\raise_the_stakes_ai_startup_competition`
+
+## Production Gate
+
+- Eligibility packet complete.
+- Product narrative and AI core evidence complete.
+- Demo panel reachable locally and ready for deploy.
+- Deck and video script ready.
+- Minimum traction proof ledger prepared.
+- Dealum payload mapped and automation playbooks validated.
+- Final external submit runs only from an authenticated Dealum session with the
+  final package flag set.
