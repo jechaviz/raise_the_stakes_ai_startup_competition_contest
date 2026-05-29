@@ -34,6 +34,12 @@ Event: 2026-07-08 and 2026-07-09 at Le Carrousel du Louvre, Paris.
 - `docs/JUDGING_SCORECARD.md`: RAISE judging narrative and score targets.
 - `docs/STRATEGIC_BRIEF.generated.md`: generated strategic brief from the
   shared V core.
+- `docs/JUDGE_SCORECARD.generated.md`: generated scorecard and competitor
+  archetype model from the shared V core.
+- `docs/COMPETITIVE_INTELLIGENCE.md`: full market/competitor war-room.
+- `docs/JUDGE_QA_OBJECTIONS.md`: judge objection answers and proof links.
+- `docs/PILOT_SPRINT_PLAYBOOK.md`: 72-hour validation sprint.
+- `docs/DEMO_CHOREOGRAPHY.md`: demo sequence for 90s, 3:30, and 5m versions.
 - `docs/RISKS.md`: risk register and mitigations.
 - `docs/AUTOMATION_PLAN.md`: WAIBAv-driven external form workflow.
 - `submission/dealum_payload.json`: structured application payload.

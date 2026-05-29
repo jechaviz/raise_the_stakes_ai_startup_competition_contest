@@ -25,6 +25,11 @@ storage references and must not be committed.
 | Dealum field map | active | `submission/dealum_form_map.yml` |
 | Competitive battlecard | active | `docs/COMPETITIVE_BATTLECARD.md` |
 | Judging scorecard | active | `docs/JUDGING_SCORECARD.md` |
+| Generated judge scorecard | active | `docs/JUDGE_SCORECARD.generated.md` |
+| Competitive intelligence | active | `docs/COMPETITIVE_INTELLIGENCE.md` |
+| Judge objections | active | `docs/JUDGE_QA_OBJECTIONS.md` |
+| Pilot sprint playbook | active | `docs/PILOT_SPRINT_PLAYBOOK.md` |
+| Demo choreography | active | `docs/DEMO_CHOREOGRAPHY.md` |
 | WAIBAv draft trace | planned | `automation/output/dealum_draft_prepare_trace.jsonl` |
 | WAIBAv final receipt | planned | `automation/output/submission_receipt.json` |
 

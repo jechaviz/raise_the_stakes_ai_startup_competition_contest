@@ -30,6 +30,10 @@ Product: `ContestOps AI`
 - [x] Risk register exists.
 - [x] Competitive battlecard exists.
 - [x] RAISE judging scorecard exists.
+- [x] Competitive intelligence war-room exists.
+- [x] Judge objection Q&A exists.
+- [x] 72-hour pilot sprint playbook exists.
+- [x] Demo choreography exists.
 - [x] WAIBAv automation plan and playbooks exist.
 - [x] Generated V manifest exists.
 - [ ] Authenticated Dealum session submits final packet and captures receipt.
