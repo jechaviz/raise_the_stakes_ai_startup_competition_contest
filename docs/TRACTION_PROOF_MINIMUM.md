@@ -56,6 +56,8 @@ before broad public launch.
 | WAIBAv playbooks | active | `automation/waiba` |
 | Redacted profile proof | active | `docs/PROFILE_BASED_APPLICATION_UPGRADE.md` |
 | VImport redacted manifest | active | `evidence/public/redacted_source_manifest.json` |
+| VImport profile application packet | active | `evidence/public/vimport_profile_application_packet.json` |
+| Secure-input schema | active | `evidence/public/secure_inputs.public_schema.json` |
 | LinkedIn validation targets | active | `docs/LINKEDIN_OUTREACH_TARGETS_100.md` |
 | User conversations | collect | `evidence/private/traction/conversations` |
 | Testimonials or LOIs | collect | `evidence/private/traction/lois` |

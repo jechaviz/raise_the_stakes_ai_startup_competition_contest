@@ -24,6 +24,9 @@
     "docs/LOCAL_ECOSYSTEM_EVIDENCE.md",
     "docs/DEALUM_FIELD_NOTES.md",
     "evidence/public/redacted_source_manifest.json",
+    "evidence/public/vimport_profile_application_packet.json",
+    "evidence/public/secure_inputs.public_schema.json",
+    "evidence/public/veloclaw_profile_policy_check.txt",
     "automation/output/profile_private_scan_trace.jsonl"
   ],
   "secure_inputs_still_required": [

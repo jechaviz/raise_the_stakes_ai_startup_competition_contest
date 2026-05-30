@@ -1,0 +1,79 @@
+metadata:
+  name: raise-profile-application-packet
+
+variables:
+  PROJECT_DIR: "${ROOT_PLAYBOOK_DIR}/../.."
+  OUTPUT_DIR: "${PROJECT_DIR}/automation/output"
+  TRACE_PATH: "${OUTPUT_DIR}/profile_application_packet_trace.jsonl"
+  REDACTED_MANIFEST: "${PROJECT_DIR}/evidence/public/redacted_source_manifest.json"
+  PROFILE_PACKET: "${PROJECT_DIR}/evidence/public/vimport_profile_application_packet.json"
+  SECURE_PUBLIC_SCHEMA: "${PROJECT_DIR}/evidence/public/secure_inputs.public_schema.json"
+  SECURE_PRIVATE_TEMPLATE: "${PROJECT_DIR}/evidence/private/profile/secure_inputs.template.json"
+  VELOCLAW_POLICY: "${PROJECT_DIR}/evidence/public/veloclaw_profile_policy_check.txt"
+  RUNBOOK: "${PROJECT_DIR}/docs/AUTOMATED_PROFILE_PIPELINE.md"
+
+steps:
+  prod:
+    - action: FS.EnsureDir
+      params:
+        path: "${OUTPUT_DIR}"
+
+    - action: Trace.Event
+      params:
+        path: "${TRACE_PATH}"
+        name: "profile_packet_start"
+        message: "Checking automated redacted profile application packet."
+        data:
+          redacted_manifest: "${REDACTED_MANIFEST}"
+          profile_packet: "${PROFILE_PACKET}"
+          secure_public_schema: "${SECURE_PUBLIC_SCHEMA}"
+          veloclaw_policy: "${VELOCLAW_POLICY}"
+
+    - action: FS.Exists
+      register: redacted_manifest_exists
+      params:
+        path: "${REDACTED_MANIFEST}"
+
+    - action: FS.Exists
+      register: profile_packet_exists
+      params:
+        path: "${PROFILE_PACKET}"
+
+    - action: FS.Exists
+      register: secure_public_schema_exists
+      params:
+        path: "${SECURE_PUBLIC_SCHEMA}"
+
+    - action: FS.Exists
+      register: secure_private_template_exists
+      params:
+        path: "${SECURE_PRIVATE_TEMPLATE}"
+
+    - action: FS.Exists
+      register: veloclaw_policy_exists
+      params:
+        path: "${VELOCLAW_POLICY}"
+
+    - action: FS.Exists
+      register: runbook_exists
+      params:
+        path: "${RUNBOOK}"
+
+    - action: Trace.Event
+      params:
+        path: "${TRACE_PATH}"
+        name: "profile_packet_complete"
+        message: "Automated redacted profile application packet checked."
+        data:
+          redacted_manifest_exists: "${redacted_manifest_exists}"
+          profile_packet_exists: "${profile_packet_exists}"
+          secure_public_schema_exists: "${secure_public_schema_exists}"
+          secure_private_template_exists: "${secure_private_template_exists}"
+          veloclaw_policy_exists: "${veloclaw_policy_exists}"
+          runbook_exists: "${runbook_exists}"
+          public_policy: "commit_public_schema_and_receipts_only"
+
+  debug:
+    - action: Note
+      params:
+        text: "RAISE profile application packet playbook is alive."

@@ -50,6 +50,8 @@
     "profile_upgrade": "docs/PROFILE_BASED_APPLICATION_UPGRADE.md",
     "dealum_field_notes": "docs/DEALUM_FIELD_NOTES.md",
     "linkedin_targets": "docs/LINKEDIN_OUTREACH_TARGETS_100.md",
-    "redacted_source_manifest": "evidence/public/redacted_source_manifest.json"
+    "redacted_source_manifest": "evidence/public/redacted_source_manifest.json",
+    "profile_application_packet": "evidence/public/vimport_profile_application_packet.json",
+    "secure_inputs_schema": "evidence/public/secure_inputs.public_schema.json"
   }
 }

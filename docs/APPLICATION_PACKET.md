@@ -179,4 +179,5 @@ generated, scored, mapped, and QA-tested by the product workflow.
 - Judging scorecard: `docs/JUDGING_SCORECARD.md`
 - Profile upgrade: `docs/PROFILE_BASED_APPLICATION_UPGRADE.md`
 - Dealum/funding notes: `docs/DEALUM_FIELD_NOTES.md`
+- Automated profile pipeline: `docs/AUTOMATED_PROFILE_PIPELINE.md`
 - LinkedIn outreach targets: `docs/LINKEDIN_OUTREACH_TARGETS_100.md`

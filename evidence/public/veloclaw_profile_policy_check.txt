@@ -1,0 +1,5 @@
+﻿capability=inspect:shape@vimport[source=yo_redacted]
+risk=medium decision=ask allowed=false
+policy=default-0.10.3 rule=risk-default
+reason=medium-risk capability requires operator approval
+receipt=30a48e3275aeeb99
