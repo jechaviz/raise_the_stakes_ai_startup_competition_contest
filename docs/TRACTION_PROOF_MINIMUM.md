@@ -54,6 +54,9 @@ before broad public launch.
 | RAISE application docs | active | this package |
 | Web demo | active | `C:\git\websites\raise_the_stakes_ai_startup_competition` |
 | WAIBAv playbooks | active | `automation/waiba` |
+| Redacted profile proof | active | `docs/PROFILE_BASED_APPLICATION_UPGRADE.md` |
+| VImport redacted manifest | active | `evidence/public/redacted_source_manifest.json` |
+| LinkedIn validation targets | active | `docs/LINKEDIN_OUTREACH_TARGETS_100.md` |
 | User conversations | collect | `evidence/private/traction/conversations` |
 | Testimonials or LOIs | collect | `evidence/private/traction/lois` |
 | Paid pilot | collect | `evidence/private/traction/revenue` |

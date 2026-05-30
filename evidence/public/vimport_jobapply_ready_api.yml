@@ -1,0 +1,31 @@
+api_integrator: 1.6.0
+info:
+  title: JobApply Multi-Site Application API
+  version: 0.1.0
+  description: Candidate-owned application workflow for job boards, ATS portals, marketplaces, redirects, email packets, and visible application sessions.
+runtime: {name: vhub, module: vhub, target: vimport_ready_api}
+contracts:
+  ready_api:
+    id: jobapply
+    category: jobs
+    method: POST
+    endpoint: /v1/ready/jobs/apply
+    inputs: ["candidate_profile_ref", "resume_ref", "cover_note_ref", "jobs", "platform_preferences", "answer_strategy", "submit_mode", "followup_policy", "match_threshold"]
+    outputs: ["applications", "platform", "job_url", "route", "normalized_fields", "match_score", "missing_answers", "status", "receipts", "followup_at"]
+    engines: ["official_api_adapter", "ats_form_mapper", "ai_job_match_router", "resume_tailor_packetizer", "instant_api_workbench", "waibav_visible_handoff", "vhub_job_queue", "mehuman_cadence"]
+    policy: ["candidate_profile_owner_ack", "credential_refs_only", "no_unreviewed_submit_by_default", "terms_review_required", "delegated_scope_receipt", "pii_redaction_receipts"]
+actions:
+  call_jobapply:
+    tags: [vimport, ready_api, jobs]
+    description: Candidate-owned application workflow for job boards, ATS portals, marketplaces, redirects, email packets, and visible application sessions.
+    performs:
+      - perform:
+          action: log.info
+          data: {message: "ready API jobapply called"}
+      - perform:
+          action: file.append
+          data:
+            path: out/ready_apis/jobapply.jsonl
+            body: "{{payload}}\n"
+vars:
+  payload: "{}"

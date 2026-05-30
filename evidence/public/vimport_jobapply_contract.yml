@@ -1,0 +1,19 @@
+schema: vimport.jobapply.ready_api.v1
+ready_api: jobapply
+endpoint: /v1/ready/jobs/apply
+method: POST
+inputs: [candidate_profile_ref, resume_ref, cover_note_ref, jobs, platform_preferences, answer_strategy, submit_mode, followup_policy, match_threshold]
+outputs: [applications, platform, job_url, route, normalized_fields, match_score, missing_answers, status, receipts, followup_at]
+engines: [official_api_adapter, ats_form_mapper, ai_job_match_router, resume_tailor_packetizer, instant_api_workbench, waibav_visible_handoff, vhub_job_queue, mehuman_cadence]
+policy: [client_source_scope_required, candidate_profile_owner_ack, credential_refs_only, no_unreviewed_submit_by_default, terms_review_required, delegated_scope_receipt, pii_redaction_receipts]
+platform_catalog_ref: vimport.jobapply.platform_catalog.v1
+apply_modes:
+  draft: generate answer packets and stop before submit
+  assisted: fill visible forms and request user checkpoint before submit
+  delegated: submit only when selected VImport scraper profile and client source scope allow it
+field_strategy:
+  normalize: [identity, contact, location, work_eligibility, compensation, resume, cover_letter, screening_questions, eeo_optional, availability, match_score, keyword_gap]
+  variant_outputs: [resume_variant, cover_note_variant, screening_answer_packet, recruiter_message, ai_match_review, apply_skip_reason]
+  dedupe_keys: [company, title, location, requisition_id, canonical_apply_url]
+failure_states: [login_required, mfa_required, captcha_or_challenge, missing_required_answer, duplicate_application, closed_job, external_redirect, unsupported_field_widget]
+receipts: [job_source_receipt, profile_mapping_receipt, answer_packet_receipt, submit_receipt, gap_receipt]

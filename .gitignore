@@ -1,0 +1,6 @@
+evidence/private/
+automation/output/private/
+*.local.json
+*.secret.json
+*.env
+*.env.*

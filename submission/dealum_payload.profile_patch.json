@@ -1,0 +1,40 @@
+{
+  "purpose": "Safe profile-based upgrade for the RAISE Dealum application.",
+  "privacy_boundary": {
+    "source_root_ref": "local_profile_root",
+    "public_commit_policy": "Only publish redacted summaries, role-level receipts, and product capability claims.",
+    "excluded_from_repo": [
+      "tax identifiers",
+      "legal IDs",
+      "passport or immigration documents",
+      "bank or payroll data",
+      "addresses",
+      "credentials",
+      "private customer records",
+      "raw OCR documents"
+    ]
+  },
+  "company_answer_updates": {
+    "traction": "Beyond the RAISE demo, the founder profile includes local product proof across fiscal/compliance SaaS, high-fidelity invoice/PDF automation, enterprise workflow migration, and browser automation. This supports the claim that ContestOps AI packages real operator work into repeatable opportunity execution.",
+    "founder_market_fit": "The founder has already turned complex, document-heavy and compliance-heavy workflows into structured software and automation. ContestOps AI generalizes that capability for founders applying to competitions, grants, accelerators, and RFP-like opportunities.",
+    "moat": "The moat compounds through opportunity templates, evidence ledgers, redaction policies, browser automation receipts, reusable V generators, VImport extraction/redaction, Veloclaw governance patterns, and WAIBAv execution playbooks."
+  },
+  "safe_evidence_refs": [
+    "docs/PROFILE_BASED_APPLICATION_UPGRADE.md",
+    "docs/LOCAL_ECOSYSTEM_EVIDENCE.md",
+    "docs/DEALUM_FIELD_NOTES.md",
+    "evidence/public/redacted_source_manifest.json",
+    "automation/output/profile_private_scan_trace.jsonl"
+  ],
+  "secure_inputs_still_required": [
+    "legal company name",
+    "incorporation country",
+    "exact total funding raised",
+    "founder personal fields",
+    "second team member",
+    "Paris attendance",
+    "public website URL",
+    "public deck URL",
+    "public video URL"
+  ]
+}

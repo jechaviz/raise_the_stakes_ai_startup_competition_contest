@@ -1,0 +1,9 @@
+WAIBA bridge plan
+
+1. Keep VImport pipelines as the product contract.
+2. Compile browser-mode steps into WAIBA playbooks under out/waiba/<pipeline>/.
+3. Use waibav validate/plan/audit before any production run.
+4. Execute waibav in mock/debug mode for CI and real CDP mode only when explicitly configured.
+5. Import WAIBA evidence back into VImport run records: screenshots, trace JSONL, field coverage, and risk metadata.
+
+candidate playbook: C:/git/v_projects/contests/worth_it/raise_the_stakes_ai_startup_competition/automation/waiba/dealum_live_form.playbook.yml

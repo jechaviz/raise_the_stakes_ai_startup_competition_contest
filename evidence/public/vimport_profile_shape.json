@@ -1,0 +1,29 @@
+{
+  "mode": "source_shape_inspection",
+  "agnostic": true,
+  "domain_pack_required": false,
+  "source": "C:\\git\\v_projects\\contests\\worth_it\\raise_the_stakes_ai_startup_competition\\evidence\\public\\redacted_source_manifest.json",
+  "source_kind": "json",
+  "prompt": "RAISE startup application packet schema only; no raw PII",
+  "recommended_engine": "json_first",
+  "observed_rows": 0,
+  "fields": [
+    {"name":"schema","kind":"string","source":"json_path","path":"$.schema","confidence":0.88,"reason":"leaf value found in JSON object"},
+    {"name":"label","kind":"string","source":"json_path","path":"$.label","confidence":0.88,"reason":"leaf value found in JSON object"},
+    {"name":"generated_at","kind":"string","source":"json_path","path":"$.generated_at","confidence":0.88,"reason":"leaf value found in JSON object"},
+    {"name":"source_root_ref","kind":"string","source":"json_path","path":"$.source_root_ref","confidence":0.88,"reason":"leaf value found in JSON object"},
+    {"name":"redaction_policy","kind":"string","source":"json_path","path":"$.redaction_policy","confidence":0.88,"reason":"leaf value found in JSON object"},
+    {"name":"areas_id","kind":"string","source":"json_path","path":"$.areas[].id","confidence":0.88,"reason":"leaf value found in JSON object"},
+    {"name":"areas_role","kind":"string","source":"json_path","path":"$.areas[].role","confidence":0.88,"reason":"leaf value found in JSON object"},
+    {"name":"areas_risk","kind":"string","source":"json_path","path":"$.areas[].risk","confidence":0.88,"reason":"leaf value found in JSON object"},
+    {"name":"areas_file_count","kind":"number","source":"json_path","path":"$.areas[].file_count","confidence":0.88,"reason":"leaf value found in JSON object"},
+    {"name":"areas_dir_count","kind":"number","source":"json_path","path":"$.areas[].dir_count","confidence":0.88,"reason":"leaf value found in JSON object"},
+    {"name":"areas_capped","kind":"boolean","source":"json_path","path":"$.areas[].capped","confidence":0.88,"reason":"leaf value found in JSON object"}
+  ],
+  "nested_tables": [
+    {"name":"areas","parent":"","fields":["items"],"reason":"JSON array can become nested table"},
+    {"name":"areas_extensions","parent":"","fields":["items"],"reason":"JSON array can become nested table"},
+    {"name":"allowed_next_steps","parent":"","fields":["items"],"reason":"JSON array can become nested table"}
+  ],
+  "next_actions": ["use JSON paths as first extraction candidates","promote arrays of objects to nested tables","capture source endpoint or hydration block as evidence"]
+}

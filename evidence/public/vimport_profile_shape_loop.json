@@ -1,0 +1,26 @@
+{
+  "mode": "conversational_shape_loop",
+  "source": "C:\\git\\v_projects\\contests\\worth_it\\raise_the_stakes_ai_startup_competition\\evidence\\public\\redacted_source_manifest.json",
+  "source_kind": "json",
+  "prompt": "resume refs, answer packet, evidence receipts, secure fields",
+  "recommended_first_engine": "json_first",
+  "loop": [
+    {"stage":"preview","goal":"show a fast sample table or image-derived candidate table","promotion":false},
+    {"stage":"analysis","goal":"explain detected entities, columns, missing fields, and uncertainty","promotion":false},
+    {"stage":"shape","goal":"emit rows, nested tables, evidence schema, and visualization candidates","promotion":false},
+    {"stage":"conversation","goal":"accept refinements like add metric, remove column, go deeper, split nested table, change format","promotion":false},
+    {"stage":"deep_probe","goal":"visit linked pages, scroll, inspect APIs, capture images, or run OCR when requested","promotion":false},
+    {"stage":"reshape","goal":"merge new evidence into the contract and update confidence","promotion":false},
+    {"stage":"promote","goal":"write VImport pipeline plus AIS/VHub data-spec after evidence checks pass","promotion":true}
+  ],
+  "conversation_commands": [
+    "add a metric or column",
+    "remove or rename columns",
+    "split this into nested tables",
+    "follow detail pages for each row",
+    "extract tables from images",
+    "change delivery format to YAML, JSONL, CSV, API, or VHub spec"
+  ],
+  "image_table_note": "For sources like Progol result images, the loop uses vision/OCR to create cell candidates, then shape confirms columns and evidence crops.",
+  "next_action": "run shape, then offline-scrape or the selected live evidence engine"
+}

@@ -27,7 +27,7 @@
     "solution": "ContestOps AI reads opportunity rules, scores fit, generates application assets, builds evidence ledgers, and prepares or executes external form workflows through WAIBAv automation.",
     "ai_core": "AI performs requirement extraction, fit scoring, answer drafting, critique, evidence-gap detection, and automation planning.",
     "business_model": "Paid application sprints, monthly founder operations workspaces, accelerator/team seats, and success-based premium services where allowed.",
-    "traction": "Reusable opportunity packages and MVP demo are active; founder conversations, LOIs, and pilot receipts are the next evidence gate.",
+    "traction": "Reusable opportunity packages and MVP demo are active. Redacted local profile proof shows prior fiscal/compliance SaaS, invoice/PDF automation, enterprise workflow migration, and browser automation work. Founder conversations, LOIs, and pilot receipts are the next evidence gate.",
     "competitive_positioning": "ContestOps AI is not a startup portal, grant database, generic proposal writer, or general browser agent. It is the application-ops layer that turns opportunities into execution plans, product proof, structured payloads, and submission receipts.",
     "moat": "The system compounds through opportunity templates, field maps, judging scorecards, evidence ledgers, automation receipts, and reusable V/WAIBAv infrastructure.",
     "raise_ask": "RAISE exposure, investor intros, customer discovery, strategic credits, and access to AI operators who can validate the product."
@@ -46,6 +46,10 @@
     "traction_plan": "docs/TRACTION_PROOF_MINIMUM.md",
     "automation_plan": "docs/AUTOMATION_PLAN.md",
     "competitive_battlecard": "docs/COMPETITIVE_BATTLECARD.md",
-    "judging_scorecard": "docs/JUDGING_SCORECARD.md"
+    "judging_scorecard": "docs/JUDGING_SCORECARD.md",
+    "profile_upgrade": "docs/PROFILE_BASED_APPLICATION_UPGRADE.md",
+    "dealum_field_notes": "docs/DEALUM_FIELD_NOTES.md",
+    "linkedin_targets": "docs/LINKEDIN_OUTREACH_TARGETS_100.md",
+    "redacted_source_manifest": "evidence/public/redacted_source_manifest.json"
   }
 }

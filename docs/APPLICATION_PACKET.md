@@ -113,6 +113,9 @@ Initial proof package:
 - reusable V generator;
 - RAISE application workspace;
 - automation playbooks and field maps;
+- redacted founder/profile evidence showing prior fiscal/compliance SaaS,
+  invoice/PDF automation, enterprise workflow migration, and browser automation
+  work;
 - pending founder conversations, LOIs, and pilot receipts listed in
   `docs/TRACTION_PROOF_MINIMUM.md`.
 
@@ -174,3 +177,6 @@ generated, scored, mapped, and QA-tested by the product workflow.
 - Demo panel: `C:\git\websites\raise_the_stakes_ai_startup_competition`
 - Competitive battlecard: `docs/COMPETITIVE_BATTLECARD.md`
 - Judging scorecard: `docs/JUDGING_SCORECARD.md`
+- Profile upgrade: `docs/PROFILE_BASED_APPLICATION_UPGRADE.md`
+- Dealum/funding notes: `docs/DEALUM_FIELD_NOTES.md`
+- LinkedIn outreach targets: `docs/LINKEDIN_OUTREACH_TARGETS_100.md`

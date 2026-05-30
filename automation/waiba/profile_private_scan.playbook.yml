@@ -1,0 +1,86 @@
+metadata:
+  name: raise-profile-private-scan
+
+variables:
+  PROJECT_DIR: "${ROOT_PLAYBOOK_DIR}/../.."
+  OUTPUT_DIR: "${PROJECT_DIR}/automation/output"
+  TRACE_PATH: "${OUTPUT_DIR}/profile_private_scan_trace.jsonl"
+  CUSTOMER_ROOT: "C:/git/customers/yo"
+  VIMPORT_ROOT: "C:/git/v_projects/vimport"
+  VELOCLAW_ROOT: "C:/git/v_projects/veloclaw"
+  WAIBAV_ROOT: "C:/git/v_projects/waibav"
+  PROFILE_DOC: "${PROJECT_DIR}/docs/PROFILE_BASED_APPLICATION_UPGRADE.md"
+  PATCH_JSON: "${PROJECT_DIR}/submission/dealum_payload.profile_patch.json"
+  REDACTED_MANIFEST: "${PROJECT_DIR}/evidence/public/redacted_source_manifest.json"
+
+steps:
+  prod:
+    - action: FS.EnsureDir
+      params:
+        path: "${OUTPUT_DIR}"
+
+    - action: Trace.Event
+      params:
+        path: "${TRACE_PATH}"
+        name: "profile_scan_start"
+        message: "Checking redacted profile evidence boundaries for RAISE."
+        data:
+          customer_root_ref: "local_profile_root"
+          vimport_root: "${VIMPORT_ROOT}"
+          veloclaw_root: "${VELOCLAW_ROOT}"
+          waibav_root: "${WAIBAV_ROOT}"
+
+    - action: FS.Exists
+      register: customer_root_exists
+      params:
+        path: "${CUSTOMER_ROOT}"
+
+    - action: FS.Exists
+      register: vimport_root_exists
+      params:
+        path: "${VIMPORT_ROOT}"
+
+    - action: FS.Exists
+      register: veloclaw_root_exists
+      params:
+        path: "${VELOCLAW_ROOT}"
+
+    - action: FS.Exists
+      register: waibav_root_exists
+      params:
+        path: "${WAIBAV_ROOT}"
+
+    - action: FS.Exists
+      register: profile_doc_exists
+      params:
+        path: "${PROFILE_DOC}"
+
+    - action: FS.Exists
+      register: patch_json_exists
+      params:
+        path: "${PATCH_JSON}"
+
+    - action: FS.Exists
+      register: redacted_manifest_exists
+      params:
+        path: "${REDACTED_MANIFEST}"
+
+    - action: Trace.Event
+      params:
+        path: "${TRACE_PATH}"
+        name: "profile_scan_complete"
+        message: "Redacted profile evidence scan complete. No private document content extracted."
+        data:
+          customer_root_exists: "${customer_root_exists}"
+          vimport_root_exists: "${vimport_root_exists}"
+          veloclaw_root_exists: "${veloclaw_root_exists}"
+          waibav_root_exists: "${waibav_root_exists}"
+          profile_doc_exists: "${profile_doc_exists}"
+          patch_json_exists: "${patch_json_exists}"
+          redacted_manifest_exists: "${redacted_manifest_exists}"
+          public_policy: "summary_only_no_pii_no_secrets"
+
+  debug:
+    - action: Note
+      params:
+        text: "RAISE profile private scan playbook is alive."

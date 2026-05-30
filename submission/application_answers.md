@@ -35,8 +35,11 @@ prepared workflow through browser/form sessions and captures receipts.
 ## Traction
 
 The current MVP has generated reusable opportunity packages, including Build
-with Gemini XPRIZE and this RAISE packet. The next proof gate is five founder
-conversations, two written validations, and one pilot or paid sprint receipt.
+with Gemini XPRIZE and this RAISE packet. Redacted founder/profile evidence
+also shows prior work across fiscal/compliance SaaS, high-fidelity invoice/PDF
+automation, enterprise workflow migration, and browser automation. The next
+proof gate is five founder conversations, two written validations, and one
+pilot or paid sprint receipt.
 
 ## RAISE Benefit
 
